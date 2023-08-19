@@ -19,7 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Elixir stuff
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+#$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Bootanimation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -50,9 +51,12 @@ PRODUCT_OVERRIDE_GMS_FINGERPRINT := google/redfin/redfin:13/TQ1A.221205.011/9244
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
 
-# Xtended Stuffs
-XTENDED_BUILD_MAINTAINER := Andreock
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_DONATE_URL := https://paypal.me/AlbertoCanale
-PROCESSOR_MODEL := sm8250
-WITH_GAPPS=true
+# Superior OS stuff
+IS_PHONE := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_STOCK_ACORE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
+BUILD_WITH_GAPPS := true
+SUPERIOR_UDFPS_ANIMATIONS := true

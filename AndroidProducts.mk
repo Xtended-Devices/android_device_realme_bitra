@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_bitra.mk
+    $(LOCAL_DIR)/superior_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_bitra-user \
-    xtended_bitra-userdebug \
-    xtended_bitra-eng
+    superior_bitra-user \
+    superior_bitra-userdebug \
+    superior_bitra-eng
